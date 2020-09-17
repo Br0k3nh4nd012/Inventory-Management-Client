@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
 
 import Navbar from './Navbar';
-import Register from './Register';
+import Register from './UserComponents/Register';
 import Update from './warhouses/Update';
 import View from './View';
 import Delete from './Delete';
