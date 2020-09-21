@@ -10,17 +10,20 @@ class Navbar extends Component {
         <div className="collpase navbar-collapse">
           <ul className="navbar-nav mr-auto">
             <li className="navbar-item">
-              <Link to="/Register" className="nav-link">Register</Link>
+              <Link to="/users" className="nav-link">Users</Link>
             </li>
 
             <li className="navbar-item">
               <Link to="/View" className="nav-link">View</Link>
             </li>
             <li className="navbar-item">
-              <Link to="/Products" className="nav-link">Products</Link>
+              <Link to="/Delete" className="nav-link">Delete</Link>
             </li>
             <li className="navbar-item">
               <Link to="/warhouses" className="nav-link">Warhouses</Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/Products" className="nav-link">Products</Link>
             </li>
           </ul>
         </div>

@@ -43,7 +43,7 @@ class Warhouse extends Component {
  }
 
  async getWarhouses(){
-    const response = await fetch('http://localhost:3000/warehouses/');
+    const response = await fetch('http://localhost:5000/warehouses/');
     const data = await response.json();
 
     console.log(data.data);
