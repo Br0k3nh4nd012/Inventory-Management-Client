@@ -56,8 +56,8 @@ class UserRegister extends Component {
   }
   render() {
     return (
+      this.state.addedSuccess ? <Redirect to = '/users' />:
       <div>
-        <form>
           <div class="form-group">
             <label for="Username">UserName</label>
             <input
@@ -108,8 +108,7 @@ class UserRegister extends Component {
             </select>
           </div>
           <button onClick={this.addedData} type="button" class="btn btn-primary">Register New User</button>
-          {this.state.addedSuccess? <Redirect to = '/users' />: console.log('fail')}
-        </form>
+          
       </div>
     );
   }

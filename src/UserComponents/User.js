@@ -87,8 +87,7 @@ class User extends Component {
       <div>
         {/* {homes.map(home => <div>{home.name}</div>)} */}
         {/* <button OnClick={this.navigate.bind(this)} type="submit" class="btn btn-primary">Add</button> */}
-        <Link to="/adduser
-        " className="btn btn-primary mr-1">
+        <Link to="/adduser/" className="btn btn-primary mr-1">
           + addNew
         </Link>
         {/* <div><h1>{this.state.warhouse.id}</h1></div> */}

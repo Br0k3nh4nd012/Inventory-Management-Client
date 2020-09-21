@@ -42,7 +42,7 @@ class Product extends Component {
     }
 
     async getProducts() {
-        const response = await fetch('http://localhost:3000/products/');
+        const response = await fetch('http://localhost:5000/products/');
         const json_response = await response.json();
 
         console.log(json_response.data);
@@ -60,7 +60,7 @@ class Product extends Component {
 
             };
             const newId = e.target.id;
-            const response = await fetch('http://localhost:3000/products?id=' + newId, requestOptions);
+            const response = await fetch('http://localhost:5000/products?id=' + newId, requestOptions);
             const data = await response.json();
             // this.setState({ postId: data.id });
             console.log(data);

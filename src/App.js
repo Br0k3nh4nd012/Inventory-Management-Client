@@ -13,6 +13,7 @@ import Warhouse from '../src/warhouses/Warhouse';
 import AddNew from '../src/warhouses/AddNew';
 import Product from "./ProductComponents/Product"
 import { NewProduct as Create } from "./ProductComponents/NewProduct"
+import UserRegister from './UserComponents/Register';
 
 
 function App() {
@@ -24,13 +25,16 @@ function App() {
       <div className="container">
         <Route path="/" exact component={Home} />
         <Route path="/Update" exact component={Update} />
-        <Route path="/Register" exact component={Register} />
+        {/* <Route path="/Register" exact component={Register} /> */}
         <Route path="/View" exact component={View} />
         <Route path="/Delete" exact component={Delete} />
         <Route path="/warhouses" exact component={Warhouse} />
         <Route path="/AddNew" exact component={AddNew} />
         <Route path='/Products' exact component={Product} />
         <Route path='/Products/new' exact component={Create} />
+        <Route path="/users" exact component={User}/>
+        <Route path="/adduser" exact component={UserRegister}/>
+
       </div>
 
 
